@@ -2,6 +2,7 @@ import sys
 import aiohttp
 import aiofiles
 import asyncio
+import time
 
 file_path = "/tmp/web_"
 
@@ -17,6 +18,8 @@ async def write_content(content, file):
         await out.flush() 
 
 async def main():
+    start_time = time.time()
+
     if len(sys.argv) != 2:
         print("Usage: python web_sync.py <URL>")
     else:
@@ -30,6 +33,9 @@ async def main():
                 urlFile = file_path+url_formatted
                 await write_content(html_content, file_path)
                 print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
+    
+    end_time = time.time()
+    print(f"Execution time: {end_time - start_time:.2f} seconds")
 
 if __name__ == "__main__":
     asyncio.run(main())

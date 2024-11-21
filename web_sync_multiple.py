@@ -1,7 +1,10 @@
 import sys
 import requests
+import time
 
 file_path = "/tmp/web_"
+
+start_time = time.time()
 
 
 def get_content(url):
@@ -30,3 +33,6 @@ else:
             urlFile = file_path+url_formatted
             write_content(html_content, urlFile)
             print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
+
+end_time = time.time()
+print(f"Execution time: {end_time - start_time:.2f} seconds")
