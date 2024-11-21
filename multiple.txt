@@ -2,3 +2,9 @@ https://www.ynov.com
 https://example.org
 https://www.thinkerview.com
 https://www.torproject.org
+https://norvig.com/big.txt
+https://jsonplaceholder.typicode.com/posts
+https://people.sc.fsu.edu/~jburkardt/data/csv/airtravel.csv
+https://via.placeholder.com/150
+https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf
+https://raw.githubusercontent.com/github/markup/main/README.md
