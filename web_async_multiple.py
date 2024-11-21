@@ -29,7 +29,7 @@ async def main():
                 html_content = await get_content(url)
                 urlFile = file_path+url_formatted
                 await write_content(html_content, file_path)
-                print(f"Le contenu de la page a été téléchargé dans {file_path}.")
+                print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
 
 if __name__ == "__main__":
     asyncio.run(main())
