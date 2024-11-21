@@ -1,7 +1,7 @@
 import sys
 import requests
 
-dl_path = "/tmp/web_"
+file_path = "/tmp/web_"
 
 
 def get_content(url):
@@ -27,6 +27,6 @@ else:
             url_formatted = url.split("://")[1]
             html_content = get_content(url)
 
-            urlFile = dl_path+url_formatted
+            urlFile = file_path+url_formatted
             write_content(html_content, urlFile)
             print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
