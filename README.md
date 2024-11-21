@@ -18,6 +18,41 @@
 ### 🌞 web_async.py
 ### [web_async.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/web_async.py)
 
+### 🌞 web_sync_multiple.py
+### [web_sync_multiple.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/web_sync_multiple.py)
+
+### 🌞 web_async_multiple.py
+### [web_async_multiple.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/web_async_multiple.py)
+
+### 🌞 Mesure !
+
+```
+[toto@clone tp6-dev-reseau]$ python web_async_multiple.py multiple.txt
+Téléchargement https://www.ynov.com
+Téléchargement https://example.org
+Téléchargement https://www.thinkerview.com
+Téléchargement https://www.torproject.org
+Téléchargement https://reddit.com
+Téléchargement https://www.wikipedia.org
+Téléchargement http://www.website.org
+Téléchargement http://www.x.com
+Téléchargement http://www.facebook.com
+Téléchargement https://www.youtube.com
+Execution time: 2.25 seconds
+[toto@clone tp6-dev-reseau]$ python web_sync_multiple.py multiple.txt
+Téléchargement https://www.ynov.com
+Téléchargement https://example.org
+Téléchargement https://www.thinkerview.com
+Téléchargement https://www.torproject.org
+Téléchargement https://reddit.com
+Téléchargement https://www.wikipedia.org
+Téléchargement http://www.website.org
+Téléchargement http://www.x.com
+Téléchargement http://www.facebook.com
+Téléchargement https://www.youtube.com
+Execution time: 5.35 seconds
+```
+
 ## II. Chat Room
 
-## II. Bonus
+## III. Bonus
