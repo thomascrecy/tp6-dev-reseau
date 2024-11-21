@@ -29,4 +29,4 @@ else:
 
             urlFile = dl_path+url_formatted
             write_content(html_content, urlFile)
-            print(f"Le contenu de la page a été téléchargé dans {dl_path}.")
+            print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
