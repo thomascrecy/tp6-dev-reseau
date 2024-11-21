@@ -17,6 +17,10 @@ async def write_content(content, file):
         await out.write(content.decode())
         await out.flush() 
 
+async def process_url(url, dl_file):
+    content = await get_content(url)
+    await write_content(content, dl_file)
+
 async def main():
     start_time = time.time()
 
@@ -24,14 +28,16 @@ async def main():
         print("Usage: python web_sync.py <URL>")
     else:
         urls_file = sys.argv[1]
+        tasks = []
         with open(urls_file, "r", encoding="utf-8") as file:
             urls = file.readlines()
             for url in urls:
                 url = url.split("\n")[0]
                 url_formatted = url.split("://")[1]
-                html_content = await get_content(url)
                 urlFile = file_path+url_formatted
-                await write_content(html_content, file_path)
+
+                tasks.append(process_url(url, urlFile))
+                await asyncio.gather(*tasks)
                 print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
     
     end_time = time.time()
