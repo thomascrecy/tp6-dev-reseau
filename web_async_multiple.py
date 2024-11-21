@@ -7,6 +7,7 @@ import time
 file_path = "/tmp/web_"
 
 async def get_content(url):
+    print(f"Téléchargement {url}")
     async with aiohttp.ClientSession() as session:
         async with session.get(url) as resp:
             resp = await resp.read()
@@ -38,7 +39,6 @@ async def main():
 
                 tasks.append(process_url(url, urlFile))
             await asyncio.gather(*tasks)
-            print(f"Le contenu de la page a été téléchargé dans {urlFile}.")
     
     end_time = time.time()
     print(f"Execution time: {end_time - start_time:.2f} seconds")
