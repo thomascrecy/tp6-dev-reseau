@@ -5,6 +5,6 @@ https://www.torproject.org
 https://reddit.com
 https://www.wikipedia.org
 http://www.website.org
-http://www.fakeurl.com
-http://www.testing.net
+http://www.x.com
+http://www.facebook.com
 https://www.youtube.com
