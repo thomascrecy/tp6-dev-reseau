@@ -31,7 +31,7 @@ async def handle_client_msg(reader, writer):
             for client in CLIENTS.keys():
                 if client != addr:
                     clientData = CLIENTS[client]
-                    clientData["w"].write(f"{CLIENTS[addr]["pseudo"]} a dit : {message}".encode())
+                    clientData["w"].write(f"{CLIENTS[addr]['pseudo']} a dit : {message}".encode())
 
         await writer.drain()
 
