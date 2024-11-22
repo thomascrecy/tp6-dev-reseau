@@ -19,6 +19,11 @@ async def send_data(writer):
 async def main():
     reader, writer = await asyncio.open_connection(host="10.6.6.20", port=8888)
 
+    pseudo = "Hello|" + input("Entrez pseudo : ")
+    pseudo_encoded = pseudo.encode()
+    writer.write(pseudo_encoded)
+    await writer.drain()
+
     tasks = [receive_responses(reader), send_data(writer)]
     await asyncio.gather(*tasks)
 
