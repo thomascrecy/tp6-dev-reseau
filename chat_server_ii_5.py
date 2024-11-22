@@ -25,7 +25,7 @@ async def handle_client_msg(reader, writer):
                 for client in CLIENTS.keys():
                     clientData = CLIENTS[client]
 
-                    clientData["w"].write(f"Annonce : {CLIENTS[addr]["pseudo"]} a rejoint la chatroom".encode())
+                    clientData["w"].write(f"Annonce : {CLIENTS[addr]['pseudo']} a rejoint la chatroom".encode())
 
         else:
             for client in CLIENTS.keys():
