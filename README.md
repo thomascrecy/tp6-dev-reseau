@@ -55,4 +55,21 @@ Execution time: 5.35 seconds
 
 ## II. Chat Room
 
+## 2. Première version
+
+### 🌞 chat_server_ii_2.py
+### [chat_server_ii_2.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/chat_server_ii_2.py)
+
+### 🌞 chat_client_ii_2.py
+### [chat_client_ii_2.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/chat_client_ii_2.py)
+
+## 3. Client asynchrone
+
+### 🌞 chat_server_ii_3.py
+### [chat_server_ii_2.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/chat_server_ii_3.py)
+
+### 🌞 chat_server_ii_3.py
+### [chat_server_ii_2.py](https://github.com/thomascrecy/tp6-dev-reseau/blob/main/chat_server_ii_3.py)
+
+
 ## III. Bonus
